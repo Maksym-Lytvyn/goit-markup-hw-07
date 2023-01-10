@@ -10,6 +10,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
 		<script src="./modal.js"></script>
 		<title>Studio</title>
+		<script src="./mobile-menu.js"></script>
 	</head>
 	<body>
 		<!-- Бекдроп з модальним вікном -->
@@ -71,7 +72,15 @@
 			<header class="header-class">
 				<div class="container main-nav">
 					<a href="#" class="studio"><span class="web">WEB </span>  STUDIO</a>
-					<img src="/svgs/menu-toggle.svg" alt="іконка відкриття мобільного меню">
+
+
+
+					<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+						<img src="/svgs/menu-toggle.svg" class="toggle-icon" alt="іконка відкриття мобільного меню" >
+					</button>
+					
+
+
 	  <nav class="nav-segment">
 		  <ul class="nav-links">
 			  <li><a href="./index.html" class="exact-nav-links header-link1">Studio</a></li>
@@ -104,7 +113,7 @@
 			<section class="bene-section">
 				<div class="container">
 				<h2 class="hidden">Benefits</h2>
-			<ul class="no-bullets">
+			<ul class="no-bullets bene-container">
 				<li class="benefit-point">
 					<div class="bene-svgs"><svg class="bene-svg1">
 						<use href="./images/sprite.svg#bene1"></use>
@@ -348,6 +357,10 @@
 		</main>
 
 		
+
+
+
+
 		<footer class="bckg-footer">
 			<div class="container-f">
 			   <div class="footer-description-div">
@@ -403,9 +416,59 @@
 
 		 </div>
 		 </footer>
-			
 
+
+		<div class="menu-container js-menu-container" id="mobile-menu">
+			<button class="menu-toggle js-close-menu">
+				<a href="#">
+					<svg class="mobile-menu-quit-icon">
+						<use href="./images/icons.svg#quit-icon"></use>
+					</svg>
+				</a>
+			</button>
+	  
+			<ul class="mobile-menu">
+					<li class="mobile-menu-item1"><a href="./index.html" class="mobile-menu-studio">Studio</a></li>
+			  		<li class="mobile-menu-item2"><a href="./portfolio.html" class="mobile-menu-portfolio">Portfolio</a></li>
+			  		<li class="mobile-menu-item3"><a href="#" class="mobile-menu-contacts">Contacts</a></li>
+					<li class="mobile-menu-item4"><a href="#" class="mobile-menu-link-phone">+11 (000) 111-11-11</a></li>
+					<li class="mobile-menu-item5"><a href="#" class="mobile-menu-link-email">info@devstudio.com</a></li>
+
+					<ul class="mobile-menu-social-media">
+						<li class="team-list-item1">
+						<a href="#" class="team-svgs team-svg1"><svg class="insta">
+							<use href="./images/sprite.svg#instagram"></use>
+							</svg></a>	
+						</li>
+						<li class="team-list-item2">
+							<a href="#" class="team-svgs team-svg2"><svg class="face">
+							<use href="./images/sprite.svg#twitter"></use>
+							</svg></a>
+						</li>
+						<li class="team-list-item3">
+							<a href="#" class="team-svgs team-svg3"><svg class="twit">
+							<use href="./images/sprite.svg#facebook"></use>
+							</svg></a>
+						</li>
+						<li class="team-list-item4">
+							<a href="#" class="team-svgs team-svg4"><svg class="linke">
+							<use href="./images/sprite.svg#linkedin2"></use>
+							</svg></a>
+						</li>
+							
+							
+					</ul>
+					
+			</ul>
+			
+	
+		 <script
+		 defer
+		 src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+		 integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+		 crossorigin="anonymous"
+	   ></script>
 	<script src="./modal.js"></script>
-	<script src="./mobile-menu.js"></script>
+	<script defer src="./mobile-menu.js"></script>
 	</body>
 </html>
